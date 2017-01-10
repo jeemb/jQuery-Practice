@@ -1,15 +1,28 @@
-var gallonsToLiters = function(gallonInput){
-	return (gallonInput*3.78541);
-};
+$(document).ready(function() {
+  $("h1").click(function() {
+    alert("This is a header.");
+  });
 
-var gallonInput = parseInt(prompt("Enter gallons: "));
+  $("p").click(function() {
+    alert("This is a paragraph.");
+  });
 
-alert(gallonsToLiters(gallonInput));
+  $("img").click(function() {
+    alert("This is an image.");
+  });
 
-var litersToGallons = function(litersInput){
-	return(litersInput * 0.264172);
-};
+	var sentence = prompt("What sentence would you like to encode?");
+	var stringLength = sentence.length;
 
-var litersInput = parseInt(prompt("Enter Liters:"));
+	var first = function(sentence) {
+		return (sentence.charAt(0)+sentence.charAt(sentence.length-1));
+	};
 
-alert(litersToGallons(litersInput));
+	var last = function(sentence) {
+		return (sentence.charAt(sentence.length-1)+sentence.charAt(0));
+	};
+
+	alert(first(sentence));
+	alert(last(sentence));
+	alert(last(first(sentence)));
+});
