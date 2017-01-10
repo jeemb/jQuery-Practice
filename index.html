@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Pigicorns</title>
   </head>
   <body>
+    <div class="container">
         <h1>Pigicorns Exist</h1>
-        <p>This is a very special page. If you click somewhere, it will tell you what type of HTML element you clicked on.</p>
-        <img src="img/pig-unicorn.jpg" alt="pig-unicorn"/>
+         <p><strong>Peek-a-boo</strong> is an ancient game riddled in mystery and deceit. Though it appears to be an innocent children's pastime, you may change your mind when you learn of its treacherous history.</p>
+
+        <div id="walrus-hidden">
+          <p>Let's play peek-a-boo.<span class="clickable">Click here</span> to see the surprise!</p>
+        </div>
+
+      <div id="walrus-showing">
+        <p>What a cute pigicorn! <span class="clickable">Click here</span> to hide her again.</p>
+        <img src="img/pig-unicorn.jpg">
+      </div>
+    </div>
   </body>
 </html>
